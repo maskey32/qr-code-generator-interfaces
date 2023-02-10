@@ -10,7 +10,7 @@ const QrCode = () => {
     const fetchQRCodeUrl = async () => {
       try {
         const response = await apiGet('qrcode');
-        console.log('--response', response);
+
         setUrl(response.data.result);
       } catch (error) {
         console.error(error);
