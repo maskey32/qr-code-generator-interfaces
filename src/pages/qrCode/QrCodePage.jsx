@@ -1,9 +1,12 @@
 import React from 'react';
+import Footer from '../../components/footer/Footer';
+import QrCode from '../../components/qrCode/QrCode';
 
 const QrCodePage = () => {
   return (
     <div>
-        This is the QrCode page.
+        <QrCode />
+        <Footer />
     </div>
   )
 }
