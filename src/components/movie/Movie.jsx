@@ -14,7 +14,7 @@ const Movie = () => {
   
   return (
     <MovieStyles>
-      <h1 className="movie-page-title">Generated Movies</h1>
+      <h1 className="movie-page-title">Generated {movies.length} Movies</h1>
       <div className="movie-page-cards">
         {movies.map((movie, index) => (
           <div key={index} className="movie-card">
