@@ -17,31 +17,26 @@ const QrCode = () => {
       }
     };
 
-    const intervalId = setInterval(() => {
-      fetchQRCodeUrl();
-    }, 10000);
+    fetchQRCodeUrl();
+    // const intervalId = setInterval(() => {
+    //   fetchQRCodeUrl();
+    // }, 10000);
 
-    return () => {
-      clearInterval(intervalId);
-    };
+    // return () => {
+    //   clearInterval(intervalId);
+    // };
   }, []);
 
-  const diagramUrl = 'https://www.kaspersky.com/content/en-global/images/repository/isc/2020/9910/a-guide-to-qr-codes-and-how-to-scan-qr-codes-1.jpg';
 
   return (
     <QrCodeStyles>
       <h1>QR Code Generator</h1>
       <hr />
       <main>
-        {/* <div className="left-side"> */}
-            <div className="diagram">
-                <img src={diagramUrl} alt="" />
-            </div>
-            <div className="text">
-                <HiOutlineCamera />
-                <p>Scan QR Code</p>
-            </div>
-        {/* </div> */}
+        <div className="text">
+          <HiOutlineCamera />
+          <p>Scan QR Code</p>
+        </div>
         <div className="right-side">
           <img src={url} alt="QR code" />
         </div>
