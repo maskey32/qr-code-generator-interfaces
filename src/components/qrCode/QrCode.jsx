@@ -17,14 +17,13 @@ const QrCode = () => {
       }
     };
 
-    fetchQRCodeUrl();
-    // const intervalId = setInterval(() => {
-    //   fetchQRCodeUrl();
-    // }, 10000);
+    const intervalId = setInterval(() => {
+      fetchQRCodeUrl();
+    }, 10000);
 
-    // return () => {
-    //   clearInterval(intervalId);
-    // };
+    return () => {
+      clearInterval(intervalId);
+    };
   }, []);
 
 
