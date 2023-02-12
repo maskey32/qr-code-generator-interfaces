@@ -48,6 +48,10 @@ export const FooterStyles = styled.div`
             font-size: 1.2rem;
         }
 
+        .copy-right {
+            text-align: center;
+        }
+
         .container {
             margin-top: 1rem;
             margin-bottom: 1rem;
