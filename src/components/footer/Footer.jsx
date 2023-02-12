@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <FooterStyles>
-      <p>
+      <p className='copy-right'>
         {currentYear} &copy; Designed by Chukwuma Ezeobika. All rights reserved.
       </p>
       <div className="container">
