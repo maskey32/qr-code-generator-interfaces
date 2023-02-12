@@ -8,6 +8,7 @@ export const QrCodeStyles = styled.div`
   text-align: center;
   padding: 2rem;
   background-color: #f9f9f9;
+  min-height: calc(100vh - 175px);
 
   h1 {
     font-size: 2rem;
@@ -26,9 +27,10 @@ export const QrCodeStyles = styled.div`
     flex-direction: column;
     align-items: center;
     width: 80%;
+    min-height: 400px;
     margin: 2rem 0;
     background-color: #f6d365;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 5px;
     background-image: linear-gradient(to right, #00c6ff, #0072ff);
 
@@ -47,6 +49,32 @@ export const QrCodeStyles = styled.div`
         font-size: 2rem;
         margin-right: 0.5rem;
         color: #fff;
+      }
+    }
+
+    .direction p {
+      color: #fff;
+      margin-top: 2rem;
+      font-size: 1.2rem;
+    }
+
+    #text {
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 2s steps(20, end) forwards;
+      color: #333;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @media (max-width: 395px) {
+      .text {
+        flex-direction: column;
       }
     }
   }
